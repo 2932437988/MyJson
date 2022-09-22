@@ -1,0 +1,2 @@
+/C++program/Json/MyJson/lession01/CMakeFiles/leptjson.dir
+/C++program/Json/MyJson/lession01/CMakeFiles/leptjson_test.dir
