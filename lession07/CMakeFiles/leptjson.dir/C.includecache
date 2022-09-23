@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/C++program/Json/MyJson/lession07/leptjson.c
+crtdbg.h
+-
+leptjson.h
+/C++program/Json/MyJson/lession07/leptjson.h
+assert.h
+-
+errno.h
+-
+math.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/C++program/Json/MyJson/lession07/leptjson.h
+stddef.h
+-
+
