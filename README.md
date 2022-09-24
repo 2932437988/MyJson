@@ -1,18 +1,27 @@
 # MyJson
 ## 关于JSON
-JSON(JavaScript Object Notation,JS对象简谱)是一种轻量级的数据交换格式。它基于ECMAScript(European Computer Manufacturers Association,欧洲计算机协会指定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得JSON成为理想的数据交换语言。易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。
+JSON (JavaScript Object Notation,JS对象简谱) 是一种轻量级的数据交换格式。它基于ECMAScript (European Computer Manufacturers Association,欧洲计算机协会指定的js规范) 的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得JSON成为理想的数据交换语言。易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。
 ## JSON语法
 ### JSON语法规则
 JSON是一个标记符的序列。这套标记符包含六个构造字符、字符串、数字和三个字面名。
+
 JSON是一个序列化的对象或数组。
+
 1.六个构造字符：
+
 begin-array = ws %x5B ws ; [ 左方括号
+
 begin-object = ws %x7B ws ; { 左大括号
+
 end-array = ws %x5D ws ; ] 右方括号
+
 end-object = ws %x7D ws ; } 右大括号
+
 name-separator = ws %3A ws ; : 冒号
+
 value-separator = ws %x2C ws ; , 逗号
-2.在这六个构造字符的前或后允许存在无意义的空白符(ws)：
+
+2.在这六个构造字符的前或后允许存在无意义的空白符(ws)
 
 3.JSON的值：
 3.1 JSON的构成：
@@ -37,6 +46,6 @@ var json = '{"a": "Hello", "b": "World"}'; //这是一个JSON字符串，本质�
 var obj = JSON.parse('{"a": "Hello", "b": "World"}');
 要实现从JS对象转换为JSON字符串，使用JSON.stringify()方法：
 var json = JSON.stringify({a: 'Hello', b: 'World'});
-##项目说明
+## 项目说明
 本项目是跟随Milo Yip大佬的教程学习项目，学习了解实现JSON解析器和生成器同时也是熟悉git、vim等操作使用的过程，目前仅是跟随教程敲写了一边代码，仍有很多疑惑，之后会进一步学习理解并尝试实现XML的解析生成。以上内容源自百度百科，之后会加入个人理解，如有错误，多多指正。
 大佬项目地址：https://github.com/miloyip/json-tutorial
